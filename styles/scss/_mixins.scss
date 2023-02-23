@@ -1,0 +1,12 @@
+@use "variables";
+
+@mixin flex-center {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+@mixin icons($width) {
+   width: #{$width};
+   height: #{$width};
+}

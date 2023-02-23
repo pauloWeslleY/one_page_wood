@@ -1,0 +1,16 @@
+{
+   "name": "one_page",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "dev": "lite-server",
+      "sass": "sass --watch --style=compressed styles/scss/index.scss:styles/css/index.min.css"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "linearicons": "^1.0.2"
+   }
+}

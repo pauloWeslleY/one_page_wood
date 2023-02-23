@@ -1,0 +1,36 @@
+@use "variables";
+@use "mixins";
+
+// ! Styles Head
+
+.head {
+   color: variables.$white-200;
+
+   &__banner {
+      background-image: url("../../images/banner.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+
+      height: 90vh;
+
+      @include mixins.flex-center;
+      flex-direction: column;
+
+      h1 {
+         font-size: 2.5rem;
+         font-weight: 600;
+      }
+
+      span {
+         font-size: 1.1rem;
+      }
+
+      hr {
+         border-width: 5px;
+         border-style: solid;
+         border-color: variables.$gray-400;
+         width: 5rem;
+      }
+   }
+}
