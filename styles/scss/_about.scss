@@ -1,0 +1,30 @@
+@use "mixins";
+@use "variables";
+
+//! Styles for About
+
+.about {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 3rem;
+
+   place-items: center;
+
+   &__image {
+      img {
+         @include mixins.icons(30rem);
+         border-radius: 4rem;
+      }
+   }
+
+   &__description {
+      h3 {
+         font-size: 1.9rem;
+         font-weight: 500;
+
+         span {
+            color: variables.$red-300;
+         }
+      }
+   }
+}
