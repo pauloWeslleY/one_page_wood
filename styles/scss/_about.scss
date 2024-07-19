@@ -4,27 +4,28 @@
 //! Styles for About
 
 .about {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
 
-   place-items: center;
+  place-items: center;
+  margin-top: 5rem;
 
-   &__image {
-      img {
-         @include mixins.icons(30rem);
-         border-radius: 4rem;
+  &__image {
+    img {
+      @include mixins.icons(30rem);
+      border-radius: 2rem;
+    }
+  }
+
+  &__description {
+    h3 {
+      font-size: 1.9rem;
+      font-weight: 500;
+
+      span {
+        color: variables.$red-300;
       }
-   }
-
-   &__description {
-      h3 {
-         font-size: 1.9rem;
-         font-weight: 500;
-
-         span {
-            color: variables.$red-300;
-         }
-      }
-   }
+    }
+  }
 }

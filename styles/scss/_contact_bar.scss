@@ -4,34 +4,34 @@
 // ! Styles Contact Bar
 
 .contact_bar {
-   height: 2rem;
-   display: flex;
-   justify-content: space-between;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
 
-   padding: 0 2rem;
-   background-color: variables.$blue-100;
+  padding: 0 2rem;
+  background-color: variables.$blue-100;
 
-   &__info {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
 
-      img {
-         @include mixins.icons(1.2rem);
-      }
+    img {
+      @include mixins.icons(1.2rem);
+    }
 
-      span {
-         font-weight: 500;
-      }
-   }
+    span {
+      font-weight: 500;
+    }
+  }
 
-   &__items {
-      display: flex;
-      gap: 0.3rem;
-      margin-block: 0.2rem;
+  &__items {
+    display: flex;
+    gap: 0.3rem;
+    margin-block: 0.2rem;
 
-      img {
-         @include mixins.icons(1.5rem);
-      }
-   }
+    img {
+      @include mixins.icons(1.5rem);
+    }
+  }
 }

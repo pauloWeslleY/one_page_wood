@@ -1,18 +1,18 @@
 @use "variables";
 
 @mixin flex-center {
-   display: flex;
-   align-items: center;
-   justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @mixin container {
-   max-width: variables.$container-width;
-   padding: 1.5rem 0;
-   margin: 0 auto;
+  max-width: variables.$container-width;
+  padding: 1.5rem 0;
+  margin: 0 auto;
 }
 
 @mixin icons($width) {
-   width: #{$width};
-   height: #{$width};
+  width: #{$width};
+  height: #{$width};
 }
